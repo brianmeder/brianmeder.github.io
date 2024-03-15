@@ -1,0 +1,214 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.offcanvas-body {
+  font-size: 3vh;
+}
+
+#hero-section {
+  height: 775px;
+  background-image: linear-gradient(rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%), url("assets/mountain.jpg");
+  /* credit to John Towner on Unsplash for royalty free image */
+  background-position: center center;
+  background-size: cover;
+  background-repeat:no-repeat;
+
+}
+
+#hero-section background-image {
+  filter: blur(8px);
+}
+
+.name p {
+  text-align: center;
+  padding-top: 20vh;
+  font-size: 75px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0px 0px 5px black,
+              0px 0px 10px black,
+              0px 0px 15px black,
+              0px 0px 20px black;
+}
+
+#desc p {
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  margin: 3px;
+  text-shadow: 2px 2px black;
+}
+
+/* Beginning of Scroll CSS */
+.box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.box .inner {
+	width: 400px;
+	height: 200px;
+	line-height: 200px;
+	font-size: 4em;
+	font-family: sans-serif;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.box .inner:first-child {
+	background-color: indianred;
+	color: darkred;
+	transform-origin: right;
+	transform: perspective(100px) rotateY(-15deg);
+}
+
+.box .inner:last-child {
+	background-color: lightcoral;
+	color: antiquewhite;
+	transform-origin: left;
+	transform: perspective(100px) rotateY(15deg);
+}
+
+.box .inner span {
+	position: absolute;
+	animation: marquee 5s linear infinite;
+}
+
+.box .inner:first-child span {
+	animation-delay: 2.5s;
+	left: -100%;
+}
+
+@keyframes marquee {
+	from {
+		left: 100%;
+	}
+
+	to {
+		left: -100%;
+	}
+}
+/* End scroll css */
+
+/* Beginning Contact CSS */
+#apple, #instagram, #github, #linkedin {
+  font-size: 8em;
+  padding: 10px 20px;
+  margin: 20px 0px;
+  background: #18191f;
+  color: #fff;
+  border-radius: 30px;
+  box-shadow: 2px 2px 2px #00000080,
+              10px 10px 12px #00000080,
+              inset 2px 2px 10px #00000080,
+              inset 2px 2px 10px #00000080,
+              inset 2px 2px 10px #00000080,
+              inset 2px 2px 10px #00000080;
+  text-shadow: 0px 0px 50px #0072ff,
+              0px 0px 100px #0072ff,
+              0px 0px 150px #0072ff,
+              0px 0px 200px #0072ff;
+  animation-name: animate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+#instagram {
+  animation-delay: 0.3s;
+  transition-duration: .2s;
+}
+#github {
+  animation-delay: 0.7s;
+  transition-duration: .2s;
+}
+#linkedin {
+  animation-delay: 1s;
+  transition-duration: .2s;
+}
+
+#apple {
+  transition-duration: .2s;
+}
+
+#apple:hover {
+  transform: scale(1.1,1.1);
+  transition-duration: .2s;
+  cursor: pointer;
+}
+
+#instagram:hover {
+  transform: scale(1.1,1.1);
+  transition-duration: .2s;
+  cursor: pointer;
+}
+#github:hover {
+  animation-delay: 0.7s;
+  transform: scale(1.1,1.1);
+  transition-duration: .2s;
+  cursor: pointer;
+}
+#linkedin:hover {
+  animation-delay: 1s;
+  transform: scale(1.1,1.1);
+  transition-duration: .2s;
+  cursor: pointer;
+}
+
+/* End Contact CSS */
+
+.button-zone {
+  justify-content: center;
+  align-items: center;
+  background: black;
+  text-align: center;
+  height: 200px;
+}
+
+.button-zone button {
+  margin-top: 50px;
+  height: 50px;
+  width: 200px;
+  border-radius: 12px;
+  background-color: lightgreen;
+}
+
+.button-zone button:hover {
+  transform: scale(1.05);
+  transition-duration: .3s;
+}
+
+.button-zone button:active {
+  transform: scale(1.0);
+  background-color: greenyellow;
+  transition-duration: 0s;
+}
+
+.copyright {
+  background-color: #121212;
+  text-align: center;
+  color: dimgray;
+}
+
+.copyright p{
+  margin: 0;
+}
+
+.contact-section {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
