@@ -134,7 +134,10 @@
   </div>
   <!-- End of Contact -->
   <section class="copyright">
-    <p>©Brian Meder</p>
+   <p>Copyright ©<span id="year"></span>. All rights reserved.</p>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
   </section>
   <script src="script.js"></script>
   <!-- JavaScript Bundle with Popper -->
